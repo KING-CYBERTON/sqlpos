@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\build\windows\x64\CMakeFiles\93ca71f967d0ae8f94e2a0e09d37e84a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{67BE61CD-62D9-3B31-A328-EEA57B6CECE3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
