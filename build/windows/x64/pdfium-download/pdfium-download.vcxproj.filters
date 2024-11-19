@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\118e58cd70d7963869477e5d06373029\pdfium-download-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3398c76e57195ddaed1322bc9ec3dd74\pdfium-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{74F78268-6033-3DA4-8075-5960DC890DF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

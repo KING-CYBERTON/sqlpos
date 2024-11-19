@@ -1,6 +1,6 @@
-^C:\USERS\STEVE\DESKTOP\PYTHONEVN\SQLPOS\BUILD\WINDOWS\X64\CMAKEFILES\3A4A9A090F09C873CA73A09EC9DB640A\GENERATE.STAMP.RULE
+^C:\USERS\ADMIN\SQLPOS\BUILD\WINDOWS\X64\CMAKEFILES\15565A03C76BDDB7731FFDB1351C9235\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/steve/Desktop/PythonEvn/sqlpos/windows -BC:/Users/steve/Desktop/PythonEvn/sqlpos/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/steve/Desktop/PythonEvn/sqlpos/build/windows/x64/sqlpos.sln
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/windows -BC:/Users/Admin/sqlpos/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Admin/sqlpos/build/windows/x64/sqlpos.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

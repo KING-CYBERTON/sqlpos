@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+    <ClCompile Include="C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+    <ClCompile Include="C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
+    <ClCompile Include="C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Admin\sqlpos\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{67BE61CD-62D9-3B31-A328-EEA57B6CECE3}</UniqueIdentifier>
+      <UniqueIdentifier>{CD4238BF-037E-3651-8B28-021B380553CE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{90E03C90-C268-3935-84B0-BBAABD6097AC}</UniqueIdentifier>
+      <UniqueIdentifier>{C18A1ADA-C2E7-3115-85D9-1E73E109D091}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

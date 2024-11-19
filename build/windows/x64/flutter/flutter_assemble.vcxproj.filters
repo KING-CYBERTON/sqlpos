@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\build\windows\x64\CMakeFiles\792e819c28b092049d69b8784e7efec6\flutter_windows.dll.rule">
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\CMakeFiles\9a037af568b8fc2ad79dfd8329cf6006\flutter_windows.dll.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\build\windows\x64\CMakeFiles\93ca71f967d0ae8f94e2a0e09d37e84a\flutter_assemble.rule">
+    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\CMakeFiles\15c90886b0b157a88e4fc5bfe903210e\flutter_assemble.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Admin\sqlpos\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\steve\Desktop\PythonEvn\sqlpos\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
+    <None Include="C:\Users\Admin\sqlpos\build\windows\x64\flutter\CMakeFiles\flutter_assemble" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{67BE61CD-62D9-3B31-A328-EEA57B6CECE3}</UniqueIdentifier>
+      <UniqueIdentifier>{CD4238BF-037E-3651-8B28-021B380553CE}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

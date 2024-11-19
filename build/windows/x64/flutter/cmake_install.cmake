@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/steve/Desktop/PythonEvn/sqlpos/windows/flutter
+# Install script for directory: C:/Users/Admin/sqlpos/windows/flutter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

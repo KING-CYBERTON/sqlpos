@@ -10,7 +10,15 @@ dependencies:
   flutter:
     sdk: flutter
   mysql1: ^0.20.0
+  get: ^4.6.5
   http: ^1.2.0
+  pdf: ^3.11.1 # Widgets for creating PDFs
+  path_provider: ^2.0.11  # To find a location to store the PDF
+  open_file: ^3.0.3  # Add this to open the file
+  printing: ^5.6.0  # Printing package for sending PDFs to printers
+  fl_chart: ^0.69.0
+  intl: ^0.19.0
+  responsive_framework: ^1.5.1
 
 dev_dependencies:
   flutter_test:
