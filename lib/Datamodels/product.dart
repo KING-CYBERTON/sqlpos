@@ -47,6 +47,17 @@ class Product {
   );
 }
 
+  // Override == and hashCode based on productId
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is Product && other.productId == productId;
+  }
+
+  @override
+  int get hashCode => productId.hashCode;
+
 }
 
 List<Product> products = [

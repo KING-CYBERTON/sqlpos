@@ -7,6 +7,7 @@ class CustomText extends StatelessWidget {
   final TextEditingController textController;
   final double size;
   final FormFieldValidator<String>? validator;
+  final ValueChanged<String>? onChanged; // Add onChanged parameter
 
   const CustomText({
     super.key,
@@ -16,6 +17,7 @@ class CustomText extends StatelessWidget {
     required this.textController,
     required this.size,
     this.validator,
+    this.onChanged, // Initialize onChanged
   });
 
   @override
@@ -24,13 +26,12 @@ class CustomText extends StatelessWidget {
         OutlineInputBorder(borderSide: Divider.createBorderSide(context));
     return SizedBox(
       width: size,
-
       child: TextFormField(
-        
         controller: textController,
         validator: validator,
+        onChanged: onChanged, // Pass onChanged to TextFormField
         decoration: InputDecoration(
-            fillColor: Colors.white,
+          fillColor: Colors.white,
           hintText: hintText,
           border: inputBorder,
           focusedBorder: inputBorder,

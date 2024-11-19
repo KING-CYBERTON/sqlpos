@@ -1,3 +1,6 @@
+import 'dart:ffi';
+
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:sqlpos/Datamodels/saleitem.dart';
@@ -5,6 +8,7 @@ import 'Controllers/AuthController.dart';
 import 'Datamodels/inventorylog.dart';
 import 'Datamodels/product.dart';
 import 'Datamodels/sale.dart';
+import 'dart:math';
 
 class MySQLHelper {
   final GetAuth getAuth = Get.put(GetAuth());
@@ -39,6 +43,86 @@ class MySQLHelper {
     }
   }
 
+  String generateTransactionId(String userId) {
+    final timestamp = DateTime.now().millisecondsSinceEpoch;
+    final random = Random().nextInt(10000); // Generate a random 4-digit number
+    // Concatenate userId, timestamp, and random number to ensure uniqueness
+    return '$userId-${(timestamp % 100000000)}-${random.toString().padLeft(4, '0')}';
+  }
+
+  Future<void> insertSaleAndItemsmpesa(
+      int saleid,
+      double totalAmount,
+      String paymentMethod,
+      int customerId,
+      int employeeId,
+      double mpesaAmount,
+      int mpesaNo,
+      String mpesacode,
+      List<Map<String, dynamic>> saleItems) async {
+    await openConnection();
+
+    await _connection!.query('START TRANSACTION');
+
+    try {
+      // Step 1: Insert into `sales` table
+      await _connection!.query(
+          'INSERT INTO sales (sale_id, sale_date, total_amount, payment_method, customer_id, employee_id, status) '
+          'VALUES ($saleid, NOW(), $totalAmount, "$paymentMethod", $customerId, $employeeId, "Completed")');
+
+      await _connection!.query(
+          'INSERT INTO mpesaTrn (sale_id, sale_time, mpesa_Amount, mpesa_No, mpesa_Code) '
+          'VALUES ($saleid, NOW(), $mpesaAmount, $mpesaNo,"$mpesacode")');
+
+      // Step 2: Insert sale items into `sales_items` table
+      for (var item in saleItems) {
+        await _connection!.query(
+            'INSERT INTO sales_items (sale_id, product_id, product_name, quantity, price, total) '
+            'VALUES ($saleid, ${item['productId']}, "${item['productName']}", ${item['quantity']}, ${item['price']}, ${item['total']})');
+      }
+
+      await _connection!.query('COMMIT');
+    } catch (e) {
+      print('Error: $e');
+      await _connection!.query('ROLLBACK');
+    } finally {
+      await _connection!.close();
+    }
+  }
+
+  Future<void> insertSaleAndItems(
+      int saleid,
+      double totalAmount,
+      String paymentMethod,
+      int customerId,
+      int employeeId,
+      List<Map<String, dynamic>> saleItems) async {
+    await openConnection();
+
+    await _connection!.query('START TRANSACTION');
+
+    try {
+      // Step 1: Insert into `sales` table
+      await _connection!.query(
+          'INSERT INTO sales (sale_id, sale_date, total_amount, payment_method, customer_id, employee_id, status) '
+          'VALUES ($saleid, NOW(), $totalAmount, "$paymentMethod", $customerId, $employeeId, "Completed")');
+
+      // Step 2: Insert sale items into `sales_items` table
+      for (var item in saleItems) {
+        await _connection!.query(
+            'INSERT INTO sales_items (sale_id, product_id, product_name, quantity, price, total) '
+            'VALUES ($saleid, ${item['productId']}, "${item['productName']}", ${item['quantity']}, ${item['price']}, ${item['total']})');
+      }
+
+      await _connection!.query('COMMIT');
+    } catch (e) {
+      print('Error: $e');
+      await _connection!.query('ROLLBACK');
+    } finally {
+      await _connection!.close();
+    }
+  }
+
   Future<Product?> fetchProductById(int productId) async {
     // Ensure the connection is open
     if (_connection == null) {
@@ -68,36 +152,37 @@ class MySQLHelper {
   }
 
   Future<List<InventoryLog>> fetchAllInventoryLogs() async {
-  List<InventoryLog> inventoryLogs = [];
-  try {
-    // Open the connection if it's not already open
-    if (_connection == null) await openConnection();
+    List<InventoryLog> inventoryLogs = [];
+    try {
+      // Open the connection if it's not already open
+      if (_connection == null) await openConnection();
 
-    // Query the database to fetch all inventory logs
-    var results = await _connection?.query('SELECT * FROM inventory_log');
+      // Query the database to fetch all inventory logs
+      var results = await _connection?.query('SELECT * FROM inventory_log');
 
-    // Map the query result to a list of InventoryLog objects
-    for (var row in results!) {
-      InventoryLog log = InventoryLog.fromMap({
-        'log_id': row['log_id'],
-        'product_id': row['product_id'],
-        'change_type': row['change_type'],
-        'quantity_change': row['quantity_change'],
-        'new_quantity': row['new_quantity'],
-        'timestamp': row['timestamp'].toString(), // Assuming `timestamp` is DateTime
-        'notes': row['notes'],  // notes may be null
-      });
-      inventoryLogs.add(log);
+      // Map the query result to a list of InventoryLog objects
+      for (var row in results!) {
+        InventoryLog log = InventoryLog.fromMap({
+          'log_id': row['log_id'],
+          'product_id': row['product_id'],
+          'change_type': row['change_type'],
+          'quantity_change': row['quantity_change'],
+          'new_quantity': row['new_quantity'],
+          'timestamp':
+              row['timestamp'].toString(), // Assuming `timestamp` is DateTime
+          'notes': row['notes'], // notes may be null
+        });
+        inventoryLogs.add(log);
+      }
+
+      print(
+          'Fetched ${inventoryLogs.length} inventory logs from the database.');
+    } catch (e) {
+      print('Error fetching inventory logs: $e');
     }
 
-    print('Fetched ${inventoryLogs.length} inventory logs from the database.');
-  } catch (e) {
-    print('Error fetching inventory logs: $e');
+    return inventoryLogs;
   }
-
-  return inventoryLogs;
-}
-
 
   Future<List<SaleItem>> fetchAllsalesItems() async {
     List<SaleItem> saleItems = [];
@@ -109,7 +194,7 @@ class MySQLHelper {
       var results = await _connection?.query('SELECT * FROM sales_items');
 
       // Map the query result to a list of Product objects
-   
+
       for (var row in results!) {
         SaleItem saleItem = SaleItem.fromMap({
           'sale_item_id': row['sale_item_id'] as int,
@@ -188,20 +273,35 @@ class MySQLHelper {
     return products;
   }
 
-  Future<bool> authenticateUser(int username, String password) async {
+  Future<bool> authenticateUser(
+      int username, String password, BuildContext context) async {
     try {
       var results = await _connection!.query(
         'SELECT * FROM employees WHERE employee_id = $username AND password = "$password"',
         // [username, password],
       );
+      final row = results.first; // Get the first row from the result
 
-      if (results.isNotEmpty) {
+      // Access the 'name' field
+      String name = row['name'];
+      String role = row['role_name'];
+      int Eid = row['employee_id'];
+      getAuth.employee.value = Eid;
+      getAuth.employee_name.value = name;
+
+      if (results.isNotEmpty && (role == "Admin" || role == "Cashier")) {
         print(results);
+
         getAuth.islogedin.value = true;
         return true; // Authentication successful
       }
       return false; // Authentication failed
     } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+        content: Text('Login failed. Please try again.'),
+        backgroundColor: Colors.red, // Red color for error
+        duration: Duration(seconds: 3), // Show the Snackbar for 3 seconds
+      ));
       print('Error: $e');
       return false;
     } finally {
@@ -254,6 +354,8 @@ class MySQLHelper {
     try {
       // Execute the query
       final result = await _connection!.query(sql, params);
+
+      print(result.fields);
 
       // Check if any row was returned
       if (result.isNotEmpty) {

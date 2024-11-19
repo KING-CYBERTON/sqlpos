@@ -4,6 +4,7 @@ C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/printing_plugin.dll
 C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/pdfium.dll
 C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
 C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/data/flutter_assets/assets/images/logo.png
 C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
 C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
 C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin

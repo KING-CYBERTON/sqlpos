@@ -22,6 +22,7 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
+
   String? gender;
   @override
   Widget build(BuildContext context) {
@@ -32,13 +33,17 @@ class _LoginPageState extends State<LoginPage> {
           width: 500,
           height: 400,
           decoration: BoxDecoration(
-            color: Colors.white,
+            gradient: LinearGradient(
+              colors: [Colors.purple, Colors.white, Colors.blue.shade900],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
             boxShadow: const [
               BoxShadow(
                 blurRadius: 10,
                 offset: Offset(1, 1),
                 color: Colors.purple,
-              )
+              ),
             ],
             border: Border.all(
               color: Colors.teal,
@@ -51,7 +56,11 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.all(14.0),
               child: Column(children: [
                 const SizedBox(height: 20),
-                //   Image.asset("adsdadsd"),
+                Image.asset(
+                    height: 80,
+                    width: 500,
+                    fit: BoxFit.fitWidth,
+                    "assets/images/logo.png"),
                 const SizedBox(height: 20),
                 const Text(
                   'Login to your account',
@@ -85,8 +94,9 @@ class _LoginPageState extends State<LoginPage> {
                         // Open the connection
                         await dbHelper.openConnection();
 
-                        bool isUserFound =
-                            await dbHelper.fetchUser( int.parse(emailController.text.trim()), passwordController.text.trim());
+                        bool isUserFound = await dbHelper.fetchUser(
+                            int.parse(emailController.text.trim()),
+                            passwordController.text.trim());
                         if (isUserFound) {
                           print('User successfully fetched');
                         } else {
@@ -95,7 +105,8 @@ class _LoginPageState extends State<LoginPage> {
 
                         dbHelper.authenticateUser(
                             int.parse(emailController.text.trim()),
-                            passwordController.text.trim());
+                            passwordController.text.trim(),
+                            context);
 
                         // ignore: avoid_print
 
