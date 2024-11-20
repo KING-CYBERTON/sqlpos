@@ -31,12 +31,13 @@ class Product {
       'category_id': categoryId,
     };
   }
-
-  // Convert Map to Product (for SQL selection)
- factory Product.fromMap(Map<String, dynamic> map) {
+// Convert Map to Product (for SQL selection)
+factory Product.fromMap(Map<String, dynamic> map) {
   return Product(
     productId: map['product_id'] as int?,
-    name: map['name'] as String,
+    name: map['name'] is Blob
+        ? String.fromCharCodes((map['name'] as Blob).toBytes())
+        : map['name'] as String, // Convert Blob to String if necessary
     description: map['description'] is Blob
         ? String.fromCharCodes((map['description'] as Blob).toBytes())
         : map['description'] as String, // Convert Blob to String if necessary
@@ -46,6 +47,7 @@ class Product {
     categoryId: map['category_id'] as int,
   );
 }
+
 
   // Override == and hashCode based on productId
   @override

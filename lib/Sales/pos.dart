@@ -539,7 +539,7 @@ class _PosScreenState extends State<PosScreen> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Text(product.description),
+                                    child: Text(product.name),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
@@ -715,14 +715,14 @@ class _PosScreenState extends State<PosScreen> {
                     children: [
                       pw.Text('SALE RECEIPT',
                           style: pw.TextStyle(fontWeight: pw.FontWeight.bold)),
-                      pw.Text('SUPERMARKET 123'),
-                      pw.Text('Tel: +123-456-7890'),
+                      pw.Text('CMF enterprices'),
+                      pw.Text('For Orders Contact: 0113618600'),
                     ],
                   ),
                 ),
                 pw.SizedBox(height: 10),
                 pw.Divider(),
-                pw.Text('RECEIPT #: 12345'),
+                pw.Text('RECEIPT#: ${saleid}'),
                 pw.Text("${DateTime.now()}"),
                 // pw.Text('CASHIER: PRIYAL SUMARIA'),
                 pw.Divider(),

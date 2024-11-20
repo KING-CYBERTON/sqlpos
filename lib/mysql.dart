@@ -102,11 +102,12 @@ class MySQLHelper {
     await _connection!.query('START TRANSACTION');
 
     try {
+      print('inserting ${saleid}');
       // Step 1: Insert into `sales` table
       await _connection!.query(
           'INSERT INTO sales (sale_id, sale_date, total_amount, payment_method, customer_id, employee_id, status) '
           'VALUES ($saleid, NOW(), $totalAmount, "$paymentMethod", $customerId, $employeeId, "Completed")');
-
+      print('inserted');
       // Step 2: Insert sale items into `sales_items` table
       for (var item in saleItems) {
         await _connection!.query(
