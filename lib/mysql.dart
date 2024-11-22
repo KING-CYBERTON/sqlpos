@@ -102,7 +102,7 @@ class MySQLHelper {
     await _connection!.query('START TRANSACTION');
 
     try {
-      print('inserting ${saleid}');
+      print('inserting $saleid');
       // Step 1: Insert into `sales` table
       await _connection!.query(
           'INSERT INTO sales (sale_id, sale_date, total_amount, payment_method, customer_id, employee_id, status) '

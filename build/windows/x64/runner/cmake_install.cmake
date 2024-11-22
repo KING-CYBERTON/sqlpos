@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Admin/sqlpos/windows/runner
+# Install script for directory: C:/Users/Administrator/Desktop/repo/sqlpos/windows/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

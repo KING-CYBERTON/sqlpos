@@ -1,1 +1,0 @@
- C:\\Users\\Admin\\sqlpos\\.dart_tool\\flutter_build\\a5359ed68ab2a7b1e4b8a9a64ba977e0\\native_assets.yaml: 

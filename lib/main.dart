@@ -1,13 +1,30 @@
-import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:sqlpos/Datamodels/product.dart';
+import 'package:window_manager/window_manager.dart';
 import 'Sales/pos.dart';
 
-
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await windowManager.ensureInitialized();
+
+  WindowOptions windowOptions = const WindowOptions(
+    fullScreen: true,
+   // size: Size(800, 600),
+    center: true,
+    backgroundColor: Colors.transparent,
+    skipTaskbar: false,
+    titleBarStyle: TitleBarStyle.hidden,
+    windowButtonVisibility: false,
+  );
+  windowManager.waitUntilReadyToShow(windowOptions, () async {
+    await windowManager.show();
+    await windowManager.focus();
+  });
+
   runApp(const MainApp());
 }
 

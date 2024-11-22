@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 import 'package:printing/printing.dart';
 import 'package:sqlpos/Controllers/CartController.dart';
 import 'package:sqlpos/Datamodels/product.dart';
@@ -14,6 +15,7 @@ import 'package:printing/printing.dart';
 import 'package:sqlpos/mysql.dart';
 import '../Controllers/AuthController.dart';
 import '../mysql.dart';
+import 'unfoldableseachbar.dart';
 
 class PosScreen extends StatefulWidget {
   const PosScreen({super.key});
@@ -31,21 +33,20 @@ class _PosScreenState extends State<PosScreen> {
   final TextEditingController MpesacodeController = TextEditingController();
   final TextEditingController MpesaAmountController = TextEditingController();
   final TextEditingController CashAmountController = TextEditingController();
+  late List<Product> prolist = [];
   int generateTransactionId() {
     final timestamp = DateTime.now().millisecondsSinceEpoch;
     return timestamp % 1000000000; // Use only the last 9 digits
   }
 
-  late double cashReceived = 0.0;
-  // double calculateChange() {
-  //   cashText = CashAmountController.text.trim();
-  //   cashReceived = int.tryParse(cashText) ?? 0; // Default to 0 if parsing fails
-  //   return cashReceived - cartController.paymentTotal;
-  // }
+  final now = DateTime.now();
+  final formatter = DateFormat('dd-MM-yyyy HH:mm:ss'); // Correct format pattern
+  // Format the current DateTime
+  bool isExpanded = false;
+  late double cashReceived;
 
   double calculateChange() {
-    double cashReceived =
-        double.tryParse(CashAmountController.text.trim()) ?? 0.0;
+    cashReceived = double.tryParse(CashAmountController.text.trim()) ?? 0.0;
     double totalAmount = cartController.paymentTotal;
     return (cashReceived - totalAmount).clamp(0.0, double.infinity);
   }
@@ -139,7 +140,7 @@ class _PosScreenState extends State<PosScreen> {
                         onChanged: (value) {
                           // Update dialog state when the user enters cash received
                           setState(() {
-                            // calculateChange();
+                            calculateChange();
                           });
                         },
                         validator: (value) {
@@ -175,9 +176,6 @@ class _PosScreenState extends State<PosScreen> {
                     onPressed: () async {
                       if (cashkey.currentState!.validate()) {
                         double totalAmount = cartController.paymentTotal;
-                        double cashReceived =
-                            double.tryParse(CashAmountController.text.trim()) ??
-                                0.0;
 
                         // Validate the cash received
                         if (cashReceived < totalAmount) {
@@ -202,8 +200,8 @@ class _PosScreenState extends State<PosScreen> {
                             saleid,
                             totalAmount,
                             "CASH",
-                            1, // Customer ID
-                            1, // Employee ID
+                            3, // Customer ID
+                            4, // Employee ID
                             cartController.cartItemsForUpload,
                           );
                           await dbHelper.closeConnection();
@@ -364,8 +362,8 @@ class _PosScreenState extends State<PosScreen> {
                         saleid,
                         totalAmount,
                         paymentMethod,
-                        1,
-                        1,
+                        3,
+                        4,
                         mpesaAmount,
                         mpesaNo,
                         MpesacodeController.text.trim(),
@@ -411,14 +409,40 @@ class _PosScreenState extends State<PosScreen> {
   final GetAuth getAuth = Get.put(GetAuth());
   final CartController cartController = Get.put(CartController());
   final TextEditingController productID = TextEditingController();
+  final TextEditingController FSearchController = TextEditingController();
 
+  String search = '';
   @override
   Widget build(BuildContext context) {
+    List<Product> filteredproduct = search.isEmpty
+        ? prolist
+        : prolist.where((product) {
+            bool matchesProductId = false;
+            bool matchesCategoryId = false;
+
+            // Safely attempt to parse the search term to an integer
+            try {
+              int searchAsInt = int.parse(search);
+              matchesProductId = product.productId == searchAsInt;
+              matchesCategoryId = product.categoryId == searchAsInt;
+            } catch (e) {
+              // Parsing failed, so treat it as a string comparison
+            }
+
+            // Perform string comparison
+            bool matchesName =
+                product.name.toLowerCase().contains(search.toLowerCase());
+
+            // Return true if any condition matches
+            return matchesProductId || matchesName || matchesCategoryId;
+          }).toList();
+    final formattedDate = formatter.format(now);
     return Scaffold(
         appBar: AppBar(
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+    
               Image.asset(
                   height: 40,
                   width: 200,
@@ -430,7 +454,7 @@ class _PosScreenState extends State<PosScreen> {
                 thickness: 2,
                 color: Colors.black,
               ),
-              Text("Date: ${DateTime.now()}"),
+              Text("Date: $formattedDate"),
             ],
           ),
           backgroundColor: Colors.grey[200],
@@ -441,251 +465,424 @@ class _PosScreenState extends State<PosScreen> {
           onKeyEvent: _onKey,
           child: Obx(
             () => getAuth.islogedin.value == true
-                ? Column(
+                ? Row(
                     children: [
-                      Container(
-                        padding: const EdgeInsets.all(8.0),
-                        alignment: Alignment.topRight,
-                        child: const Text(
-                          "Ayopa 1.0.01.1",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                      ),
-                      Expanded(
-                        child: SingleChildScrollView(
-                            child: Table(
-                          columnWidths: const {
-                            0: FlexColumnWidth(0.5), // Num
-                            1: FlexColumnWidth(2), // Item Lookup Code
-                            2: FlexColumnWidth(3), // Description
-                            3: FixedColumnWidth(80.0), // Quantity
-                            4: FlexColumnWidth(2), // Price
-                            5: FlexColumnWidth(2), // Extended
-                            6: FixedColumnWidth(70.0), // Taxable
-                            7: FlexColumnWidth(1), // Rep
-                          },
-                          border: TableBorder.all(color: Colors.grey),
+                      AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        width: isExpanded ? 300 : 0, // Adjust sizes here
+
+                        child: Stack(
                           children: [
-                            // Header Row
-                            TableRow(
-                              decoration:
-                                  BoxDecoration(color: Colors.grey[300]),
-                              children: const [
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('NO',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
+                            // Sidebar content
+                            Column(
+                              children: [
+                                SizedBox(
+                                  height: 100,
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        flex: 2,
+                                        child: SearchBarUnfoldable(
+                                          controller: FSearchController,
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: IconButton(
+                                            onPressed: () {
+                                              setState(() {
+                                                search = FSearchController.text
+                                                    .trim();
+                                              });
+                                            },
+                                            style: ElevatedButton.styleFrom(
+                                              backgroundColor: Colors
+                                                  .transparent, // Make button background transparent
+                                              shadowColor: Colors
+                                                  .transparent, // Remove button shadow
+                                            ),
+                                            icon: const Icon(Icons.search,
+                                                color: Colors.blueGrey)),
+                                      ),
+                                    ],
+                                  ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Item Lookup Code',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Description',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Quantity',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Price',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Extended',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Taxable',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Text('Rep',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold)),
+                                Expanded(
+                                  child: Container(
+                                    
+                                    child: SingleChildScrollView(
+                                        child: Table(
+                                      columnWidths: const {
+                                        0: FlexColumnWidth(2),
+                                        1: // Item Lookup Code
+                                            FlexColumnWidth(3), // Description
+                                      },
+                                      border: TableBorder.all(color: Colors.grey),
+                                      children: [
+                                        // Header Row
+                                        TableRow(
+                                          decoration: BoxDecoration(
+                                              color: Colors.grey[300]),
+                                          children: const [
+                                            Padding(
+                                              padding: EdgeInsets.all(8.0),
+                                              child: Text('Item Code',
+                                                  style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold)),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(8.0),
+                                              child: Text('Description',
+                                                  style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold)),
+                                            ),
+                                          ],
+                                        ),
+                                    
+                                        // Data Rows
+                                        ...filteredproduct
+                                            .asMap()
+                                            .entries
+                                            .map((entry) {
+                                          Product product = entry
+                                              .value; // The product at the current index
+                                    
+                                          return TableRow(
+                                            children: [
+                                            GestureDetector(
+                                              onDoubleTap: (){
+                                                   cartController
+                                                    .addProduct(product);
+                                                print(cartController.total);
+                                              },
+                                                child: Padding(
+                                                  padding:
+                                                      const EdgeInsets.all(8.0),
+                                                  child: Text(
+                                                      product.productId.toString()),
+                                                ),
+                                              ),
+                                              GestureDetector(
+                                                onDoubleTap: (){
+                                                     cartController
+                                                    .addProduct(product);
+                                                print(cartController.total);
+                                                },
+                                                child: Padding(
+                                                  padding:
+                                                      const EdgeInsets.all(8.0),
+                                                  child: Text(product.name),
+                                                ),
+                                              ),
+                                            ],
+                                          );
+                                        }),
+                                      ],
+                                    )),
+                                  ),
                                 ),
                               ],
                             ),
-
-                            // Data Rows
-                            ...cartController.products.entries.map((entry) {
-                              Product product = entry.key;
-                              int quantity = entry.value;
-
-                              return TableRow(
-                                children: [
-                                  const Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                    child: Text(''), // Row number
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(product.productId.toString()),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(product.name),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text('$quantity'),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child:
-                                        Text(product.price.toStringAsFixed(2)),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(
-                                      cartController
-                                          .totalForProduct(product)
-                                          .toStringAsFixed(2),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(cartController.total),
-                                  ),
-                                  const Padding(
-                                    padding: EdgeInsets.all(8.0),
-                                    child: Text("no"),
-                                  ),
-                                ],
-                              );
-                            }),
+                            // Toggle button at the edge
                           ],
-                        )),
-                      ),
-                      Container(
-                        height: 180,
-                        decoration: const BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [
-                              Color.fromARGB(255, 206, 124, 221),
-                              Colors.white,
-                              Color.fromARGB(255, 99, 137, 196)
-                            ],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
                         ),
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            SizedBox(
-                              height: 40,
-                              child: Row(
-                                children: [
-                                  const SizedBox(
-                                      width: 100,
-                                      child: Text(
-                                        "Look Up Code",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 14),
-                                      )),
-                                  Container(
-                                    width: 200,
+                      ),
+                      Expanded(
+                        child: Container(
                                     decoration: BoxDecoration(
-                                      color: const Color.fromARGB(
-                                          255, 241, 237, 237),
-                                      border: Border.all(),
-                                    ),
-                                    child: TextField(
-                                      controller: productID,
-                                      focusNode: FocusNode(),
-                                      onSubmitted: (value) async {
-                                        // Action when Enter is pressed
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10), // Rounded corners
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.5), // Shadow color
+                blurRadius: 10, // Softness of shadow
+                offset: Offset(0, 10), // Offset in x and y directions
+              ),
+            ],
+          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 10),
+                                    child: IconButton(
+                                      onPressed: () async {
                                         final dbHelper = MySQLHelper();
-                                        Product? product = await dbHelper
-                                            .fetchProductById(int.parse(
-                                                productID.text.trim()));
-                                        product = await dbHelper
-                                            .fetchProductById(int.parse(
-                                                productID.text.trim()));
-                                        print(product!.stockQuantity);
-                                        cartController.addProduct(product);
-                                        print(cartController.total);
+                          
+                                        List<Product> pro =
+                                            await dbHelper.fetchAllProducts();
+                                        pro = await dbHelper.fetchAllProducts();
+                          
+                                        setState(() {
+                                          prolist = pro;
+                                          isExpanded = !isExpanded;
+                                        });
                                       },
-                                      decoration: const InputDecoration(
-                                          hintText: "Type something"),
+                                      icon: Icon(
+                                        isExpanded
+                                            ? Icons.arrow_back_ios
+                                            : Icons.arrow_forward_ios,
+                                        color: Colors.blueGrey,
+                                      ),
                                     ),
-                                  )
+                                  ),
+                                  const Spacer(),
+                                  Container(
+                                    padding: const EdgeInsets.all(8.0),
+                                    alignment: Alignment.topRight,
+                                    child: const Text(
+                                      "Ayopa 1.0.01.1",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                  ),
                                 ],
                               ),
-                            ),
-                            const Divider(
-                              thickness: 2,
-                              color: Colors.black,
-                            ),
-                            Obx(
-                              () => SizedBox(
-                                height: 80,
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
+                              Expanded(
+                                child: SingleChildScrollView(
+                                    child: Table(
+                                  columnWidths: const {
+                                    0: FlexColumnWidth(0.5), // Num
+                                    1: FlexColumnWidth(2), // Item Lookup Code
+                                    2: FlexColumnWidth(3), // Description
+                                    3: FixedColumnWidth(80.0), // Quantity
+                                    4: FlexColumnWidth(2), // Price
+                                    5: FlexColumnWidth(2), // Extended
+                                    6: FixedColumnWidth(70.0), // Taxable
+                                    7: FlexColumnWidth(1), // Rep
+                                  },
+                                  border: TableBorder.all(color: Colors.grey),
                                   children: [
-                                    // Calculate and display weight (you can add logic to compute it)
-                                    _buildSummaryItem("Weight", ""),
-                                    const VerticalDivider(
-                                      thickness: 2,
-                                      color: Colors.grey,
+                                    // Header Row
+                                    TableRow(
+                                      decoration:
+                                          BoxDecoration(color: Colors.grey[300]),
+                                      children: const [
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('NO',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Item Lookup Code',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Description',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Quantity',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Price',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Extended',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Taxable',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.all(8.0),
+                                          child: Text('Rep',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold)),
+                                        ),
+                                      ],
                                     ),
-                                    // Sub Total from cartController
-                                    _buildSummaryItem(
-                                        "Sales Tax",
-                                        cartController.products.isEmpty
-                                            ? "0.00"
-                                            : cartController.subtotal
-                                                .toStringAsFixed(2)),
-                                    const VerticalDivider(
-                                      thickness: 2,
-                                      color: Colors.grey,
+                          
+                                    // Data Rows
+                                    ...cartController.products.entries
+                                        .map((entry) {
+                                      Product product = entry.key;
+                                      int quantity = entry.value;
+                          
+                                      return TableRow(
+                                        children: [
+                                          const Padding(
+                                            padding: EdgeInsets.all(8.0),
+                                            child: Text(''), // Row number
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                                product.productId.toString()),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(product.name),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('$quantity'),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                                product.price.toStringAsFixed(2)),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text(
+                                              cartController
+                                                  .totalForProduct(product)
+                                                  .toStringAsFixed(2),
+                                            ),
+                                          ),
+                                          const Padding(
+                                            padding: EdgeInsets.all(8.0),
+                                            child: Text(''),
+                                          ),
+                                          const Padding(
+                                            padding: EdgeInsets.all(8.0),
+                                            child: Text("no"),
+                                          ),
+                                        ],
+                                      );
+                                    }),
+                                  ],
+                                )),
+                              ),
+                              Container(
+                                height: 180,
+                                decoration: const BoxDecoration(
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      Color.fromARGB(255, 206, 124, 221),
+                                      Colors.white,
+                                      Color.fromARGB(255, 99, 137, 196)
+                                    ],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                  ),
+                                ),
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 40,
+                                      child: Row(
+                                        children: [
+                                          const SizedBox(
+                                              width: 100,
+                                              child: Text(
+                                                "Look Up Code",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 14),
+                                              )),
+                                          Container(
+                                            width: 200,
+                                            decoration: BoxDecoration(
+                                              color: const Color.fromARGB(
+                                                  255, 241, 237, 237),
+                                              border: Border.all(),
+                                            ),
+                                            child: TextField(
+                                              controller: productID,
+                                              focusNode: FocusNode(),
+                                              onSubmitted: (value) async {
+                                                // Action when Enter is pressed
+                                                final dbHelper = MySQLHelper();
+                                                Product? product = await dbHelper
+                                                    .fetchProductById(int.parse(
+                                                        productID.text.trim()));
+                                                product = await dbHelper
+                                                    .fetchProductById(int.parse(
+                                                        productID.text.trim()));
+                                                print(product!.stockQuantity);
+                                                cartController
+                                                    .addProduct(product);
+                                                print(cartController.total);
+                                              },
+                                              decoration: const InputDecoration(
+                                                  hintText: "Type something"),
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                    // Sales Tax, assuming no tax for now
-                                    _buildSummaryItem(
-                                        "Sales Tax",
-                                        cartController.products.isEmpty
-                                            ? "0.00"
-                                            : cartController.tax
-                                                .toStringAsFixed(2)),
-                                    const VerticalDivider(
+                                    const Divider(
                                       thickness: 2,
-                                      color: Colors.grey,
+                                      color: Colors.black,
                                     ),
-                                    // Totals (Grand Total from CartController)
-                                    _buildSummaryItem(
-                                        "Totals",
-                                        cartController.products.isEmpty
-                                            ? "0.00"
-                                            : "${cartController.total ?? 0}")
+                                    Obx(
+                                      () => SizedBox(
+                                        height: 80,
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            // Calculate and display weight (you can add logic to compute it)
+                                            _buildSummaryItem("Weight", ""),
+                                            const VerticalDivider(
+                                              thickness: 2,
+                                              color: Colors.grey,
+                                            ),
+                                            // Sub Total from cartController
+                                            _buildSummaryItem(
+                                                "Sales Tax",
+                                                cartController.products.isEmpty
+                                                    ? "0.00"
+                                                    : cartController.subtotal
+                                                        .toStringAsFixed(2)),
+                                            const VerticalDivider(
+                                              thickness: 2,
+                                              color: Colors.grey,
+                                            ),
+                                            // Sales Tax, assuming no tax for now
+                                            _buildSummaryItem(
+                                                "Sales Tax",
+                                                cartController.products.isEmpty
+                                                    ? "0.00"
+                                                    : cartController.tax
+                                                        .toStringAsFixed(2)),
+                                            const VerticalDivider(
+                                              thickness: 2,
+                                              color: Colors.grey,
+                                            ),
+                                            // Totals (Grand Total from CartController)
+                                            _buildSummaryItem(
+                                                "Totals",
+                                                cartController.products.isEmpty
+                                                    ? "0.00"
+                                                    : "${cartController.total ?? 0}")
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    const Divider(
+                                      thickness: 2,
+                                      color: Colors.black,
+                                    ),
                                   ],
                                 ),
-                              ),
-                            ),
-                            const Divider(
-                              thickness: 2,
-                              color: Colors.black,
-                            ),
-                          ],
+                              )
+                            ],
+                          ),
                         ),
-                      )
+                      ),
                     ],
                   )
                 : const LoginPage(),
@@ -698,6 +895,7 @@ class _PosScreenState extends State<PosScreen> {
     final pdf = pw.Document(version: PdfVersion.pdf_1_5, compress: true);
     final font = await PdfGoogleFonts.nunitoExtraLight();
     final double change = calculateChange();
+    final formattedDate = formatter.format(now);
 
     pdf.addPage(
       pw.Page(
@@ -712,57 +910,63 @@ class _PosScreenState extends State<PosScreen> {
               children: [
                 pw.Center(
                   child: pw.Column(
+                    mainAxisAlignment: pw.MainAxisAlignment.start,
                     children: [
                       pw.Text('SALE RECEIPT',
-                          style: pw.TextStyle(fontWeight: pw.FontWeight.bold)),
-                      pw.Text('CMF enterprices'),
-                      pw.Text('For Orders Contact: 0113618600'),
+                          style: const pw.TextStyle(fontSize: 10)),
+                      pw.Text('CMF enterprices',
+                          style: pw.TextStyle(
+                              fontWeight: pw.FontWeight.bold, fontSize: 10)),
+                      pw.Text('For Orders Contact: 0113618600',
+                          style: const pw.TextStyle(fontSize: 10)),
                     ],
                   ),
                 ),
-                pw.SizedBox(height: 10),
+                pw.SizedBox(height: 4),
                 pw.Divider(),
-                pw.Text('RECEIPT#: ${saleid}'),
-                pw.Text("${DateTime.now()}"),
+                pw.Text('RECEIPT#: $saleid',
+                    style: const pw.TextStyle(fontSize: 8)),
+                pw.Text("Time: $formattedDate",
+                    style: const pw.TextStyle(fontSize: 8)),
                 // pw.Text('CASHIER: PRIYAL SUMARIA'),
                 pw.Divider(),
-                pw.SizedBox(height: 10),
+                pw.SizedBox(height: 4),
 
                 // Top row header for item description and price
                 pw.Padding(
-                  padding: const pw.EdgeInsets.symmetric(vertical: 4.0),
+                  padding: const pw.EdgeInsets.symmetric(vertical: 1.0),
                   child: pw.Row(
                     mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                     children: [
                       pw.Expanded(
+                        flex: 1,
                         child: pw.Text('CODE',
                             style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
+                                fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       ),
                       pw.Expanded(
+                        flex: 2,
                         child: pw.Text('DESCRIPTION',
                             style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
+                                fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       ),
                       pw.Expanded(
+                        flex: 1,
                         child: pw.Text('PRICE',
                             style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
+                                fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       ),
                       pw.Expanded(
-                        child: pw.Text('QUANTITY',
+                        flex: 1,
+                        child: pw.Text('QTY',
                             style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
+                                fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       ),
                       pw.Expanded(
+                        flex: 1,
                         child: pw.Text('TOTAL',
                             style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 12)),
+                                fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       ),
                     ],
                   ),
@@ -775,27 +979,43 @@ class _PosScreenState extends State<PosScreen> {
                     padding: const pw.EdgeInsets.symmetric(vertical: 2.0),
                     child: pw.Row(
                       mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: pw.CrossAxisAlignment.start,
                       children: [
-                        pw.Text(item['productId'].toString(),
-                            style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
-                        pw.Text(item['productName'].toString(),
-                            style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
-                        pw.Text(item['price'].toString(),
-                            style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
-                        pw.Text(item['quantity'].toString(),
-                            style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
-                        pw.Text(item['total'].toString(),
-                            style: pw.TextStyle(
-                                fontWeight: pw.FontWeight.normal,
-                                fontSize: 10)),
+                        pw.Column(
+                            mainAxisAlignment: pw.MainAxisAlignment.start,
+                            crossAxisAlignment: pw.CrossAxisAlignment.start,
+                            children: [
+                              pw.Text(item['productId'].toString(),
+                                  style: pw.TextStyle(
+                                      fontWeight: pw.FontWeight.normal,
+                                      fontSize: 8)),
+                              pw.Text(item['productName'].toString(),
+                                  style: pw.TextStyle(
+                                      fontWeight: pw.FontWeight.normal,
+                                      fontSize: 8)),
+                            ]),
+                        pw.Column(children: [
+                          pw.Row(children: [
+                            pw.Text(item['quantity'].toString(),
+                                style: pw.TextStyle(
+                                    fontWeight: pw.FontWeight.normal,
+                                    fontSize: 8)),
+                            pw.SizedBox(width: 4),
+                            pw.Text('X',
+                                style: pw.TextStyle(
+                                    fontWeight: pw.FontWeight.normal,
+                                    fontSize: 8)),
+                            pw.SizedBox(width: 4),
+                            pw.Text(item['price'].toString(),
+                                style: pw.TextStyle(
+                                    fontWeight: pw.FontWeight.normal,
+                                    fontSize: 8)),
+                          ]),
+                          pw.Text(item['total'].toString(),
+                              style: pw.TextStyle(
+                                  fontWeight: pw.FontWeight.normal,
+                                  fontSize: 8)),
+                        ])
                       ],
                     ),
                   ),
@@ -809,10 +1029,10 @@ class _PosScreenState extends State<PosScreen> {
                     children: [
                       pw.Text('PAYMENT METHOD',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
-                      pw.Text(cartController.subtotal.toStringAsFixed(2),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
+                      pw.Text(" $PAYMENT",
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                     ],
                   ),
                 ),
@@ -821,12 +1041,12 @@ class _PosScreenState extends State<PosScreen> {
                   child: pw.Row(
                     mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
                     children: [
-                      pw.Text(" $PAYMENT",
+                      pw.Text('VAT',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       pw.Text(cartController.tax.toStringAsFixed(2),
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                     ],
                   ),
                 ),
@@ -866,14 +1086,14 @@ class _PosScreenState extends State<PosScreen> {
                     children: [
                       pw.Text('TOTAL',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       pw.Text(cartController.total,
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                     ],
                   ),
                 ),
-                pw.SizedBox(height: 10),
+                pw.SizedBox(height: 8),
                 pw.Padding(
                   padding: const pw.EdgeInsets.symmetric(vertical: 2.0),
                   child: pw.Row(
@@ -881,10 +1101,10 @@ class _PosScreenState extends State<PosScreen> {
                     children: [
                       pw.Text('CASH',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       pw.Text(cashReceived.toStringAsFixed(2),
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                     ],
                   ),
                 ),
@@ -895,24 +1115,24 @@ class _PosScreenState extends State<PosScreen> {
                     children: [
                       pw.Text('CHANGE',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       pw.Text(change.toStringAsFixed(2),
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.bold, fontSize: 10)),
+                              fontWeight: pw.FontWeight.bold, fontSize: 8)),
                     ],
                   ),
                 ),
-                pw.SizedBox(height: 10),
+                pw.SizedBox(height: 8),
                 pw.Divider(),
                 pw.Center(
                   child: pw.Column(
                     children: [
                       pw.Text('THANK YOU',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       pw.Text('HAVE A NICE DAY',
                           style: pw.TextStyle(
-                              fontWeight: pw.FontWeight.normal, fontSize: 10)),
+                              fontWeight: pw.FontWeight.normal, fontSize: 8)),
                       pw.Divider(
                         thickness: 1,
                       ),

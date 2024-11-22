@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Admin/sqlpos/windows/flutter/ephemeral/.plugin_symlinks/printing/windows
+# Install script for directory: C:/Users/Administrator/Desktop/repo/sqlpos/windows/flutter/ephemeral/.plugin_symlinks/printing/windows
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

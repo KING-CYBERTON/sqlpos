@@ -13,8 +13,8 @@ endif()
 
 ExternalProject_Add(pdfium-download
                     URL;https://github.com/bblanchon/pdfium-binaries/releases/download/chromium/5200/pdfium-win-x64.tgz
-                    SOURCE_DIR          "C:/Users/Admin/sqlpos/build/windows/x64/pdfium-src"
-                    BINARY_DIR          "C:/Users/Admin/sqlpos/build/windows/x64/pdfium-build"
+                    SOURCE_DIR          "C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-src"
+                    BINARY_DIR          "C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

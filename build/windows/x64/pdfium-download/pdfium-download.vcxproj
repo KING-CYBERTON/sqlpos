@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EEADF200-7F96-3F8E-A403-CB4246437E61}</ProjectGuid>
+    <ProjectGuid>{ED7245CD-8F34-3726-9C98-3369F16C93DB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -105,12 +105,12 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-mkdir.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-mkdir.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-mkdir
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -119,13 +119,13 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Release -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Release -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-mkdir
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -134,13 +134,13 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/MinSizeRel -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/MinSizeRel -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-mkdir
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -149,13 +149,13 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/RelWithDebInfo -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/RelWithDebInfo -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/tmp/pdfium-download-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-mkdir
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -164,25 +164,25 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-download.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-download
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -190,22 +190,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (download, verify and extract) for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-download
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -213,22 +213,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (download, verify and extract) for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-download
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -236,22 +236,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (download, verify and extract) for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/download-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/verify-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/extract-pdfium-download.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-download
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,18 +259,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\download-pdfium-download.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-urlinfo.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-update.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-update.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-update
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -278,14 +278,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-update
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -293,14 +293,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-update
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -308,14 +308,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-update
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-update
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -323,18 +323,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-update-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-patch.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-patch.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-patch
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -342,14 +342,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-patch
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -357,14 +357,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-patch
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -372,14 +372,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-patch
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -387,22 +387,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\pdfium-download-patch-info.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-configure.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-configure.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-configure
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -410,18 +410,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-configure
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -429,18 +429,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-configure
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -448,18 +448,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-configure
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -467,22 +467,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-cfgcmd.txt;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-build.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-build.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-build
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -490,18 +490,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-build
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -509,18 +509,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-build
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -528,18 +528,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-build
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -547,22 +547,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-install.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-install.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-install
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -570,18 +570,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-install
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -589,18 +589,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-install
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -608,18 +608,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-install
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -627,22 +627,22 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\0a2a096b81d2113ad29964fc30045de9\pdfium-download-test.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\38b94d726b521df385e90ecc54f27342\pdfium-download-test.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-test
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -650,18 +650,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-test
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -669,18 +669,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-test
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -688,18 +688,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-cd C:\Users\Admin\sqlpos\build\windows\x64\pdfium-build
+cd C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-test
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -707,20 +707,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\118e58cd70d7963869477e5d06373029\pdfium-download-complete.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\32cf02f58a02fae6eef3d6893410b878\pdfium-download-complete.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Debug
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Debug/pdfium-download-complete
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Debug/pdfium-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-done
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Debug/pdfium-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -728,16 +728,16 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-install;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-mkdir;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-download;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-update;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-patch;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-configure;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-build;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Debug\pdfium-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-install;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-mkdir;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-download;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-update;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-patch;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-configure;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-build;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Debug\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Debug\pdfium-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Release
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Release
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Release/pdfium-download-complete
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/Release/pdfium-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-done
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/Release/pdfium-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -745,16 +745,16 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-install;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-mkdir;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-download;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-update;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-patch;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-configure;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-build;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Release\pdfium-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-install;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-mkdir;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-download;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-update;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-patch;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-configure;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-build;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\Release\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Release\pdfium-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/MinSizeRel
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/MinSizeRel/pdfium-download-complete
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/MinSizeRel/pdfium-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-done
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/MinSizeRel/pdfium-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -762,16 +762,16 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-install;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-mkdir;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-download;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-update;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-patch;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-configure;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-build;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\MinSizeRel\pdfium-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-install;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-mkdir;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-download;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-update;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-patch;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-configure;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-build;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\MinSizeRel\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\MinSizeRel\pdfium-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'pdfium-download'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/RelWithDebInfo
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/RelWithDebInfo/pdfium-download-complete
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/RelWithDebInfo/pdfium-download-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-done
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download-prefix/src/pdfium-download-stamp/RelWithDebInfo/pdfium-download-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -779,13 +779,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-install;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-mkdir;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-download;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-update;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-patch;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-configure;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-build;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\RelWithDebInfo\pdfium-download-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-install;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-mkdir;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-download;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-update;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-patch;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-configure;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-build;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\src\pdfium-download-stamp\RelWithDebInfo\pdfium-download-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\RelWithDebInfo\pdfium-download-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3398c76e57195ddaed1322bc9ec3dd74\pdfium-download.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\41092c64fcab600765efdc89d3bd447c\pdfium-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 :cmEnd
@@ -794,8 +794,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Debug\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Debug\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
@@ -806,8 +806,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Release\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\Release\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
@@ -818,8 +818,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\MinSizeRel\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\MinSizeRel\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
@@ -830,18 +830,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\RelWithDebInfo\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\RelWithDebInfo\pdfium-download-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -849,12 +849,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -862,12 +862,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -875,12 +875,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Admin/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -888,18 +888,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\download.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\extractfile.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\pdfium-download-prefix\tmp\pdfium-download-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download">
+    <None Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\pdfium-download">
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Admin\sqlpos\build\windows\x64\pdfium-download\ZERO_CHECK.vcxproj">
-      <Project>{9FA6FF40-3467-3032-B810-0B5C4A8C9D97}</Project>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\ZERO_CHECK.vcxproj">
+      <Project>{096600C2-6845-3366-B679-DBCEA89024AD}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\build\windows\x64\CMakeFiles\c1da0c80506c7c9faac3ca05d97e7ee7\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\CMakeFiles\bfb3e7e409d1fa141e4b883db5e987c6\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CD4238BF-037E-3651-8B28-021B380553CE}</UniqueIdentifier>
+      <UniqueIdentifier>{10772C98-F914-3F02-95F6-1804526CE4EF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -18,7 +18,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AFD2120A-01A1-3F52-AD95-33CE8F81C353}</ProjectGuid>
+    <ProjectGuid>{24A9CFE0-AF53-3C0A-96F6-26118DB447BF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -50,19 +50,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\runner\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sqlpos.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sqlpos</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\Admin\sqlpos\build\windows\x64\runner\Profile\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\Profile\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">sqlpos.dir\Profile\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">sqlpos</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\runner\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sqlpos.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sqlpos</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
@@ -71,7 +71,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -92,10 +92,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.1.0\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=1;FLUTTER_VERSION_PATCH=0;FLUTTER_VERSION_BUILD=0;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -103,25 +103,25 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Debug\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\printing\Debug\printing_plugin.lib;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Debug\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\printing\Debug\printing_plugin.lib;..\plugins\screen_retriever_windows\Debug\screen_retriever_windows_plugin.lib;..\plugins\window_manager\Debug\window_manager_plugin.lib;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/sqlpos.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/sqlpos/build/windows/x64/runner/Debug/sqlpos.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/Debug/sqlpos.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/Debug/sqlpos.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>C:\Users\Admin\sqlpos\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -142,10 +142,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.1.0\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=1;FLUTTER_VERSION_PATCH=0;FLUTTER_VERSION_BUILD=0;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Profile\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -153,25 +153,25 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Profile\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\printing\Profile\printing_plugin.lib;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Profile\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\printing\Profile\printing_plugin.lib;..\plugins\screen_retriever_windows\Profile\screen_retriever_windows_plugin.lib;..\plugins\window_manager\Profile\window_manager_plugin.lib;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/sqlpos/build/windows/x64/runner/Profile/sqlpos.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/sqlpos/build/windows/x64/runner/Profile/sqlpos.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/Profile/sqlpos.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/Profile/sqlpos.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>C:\Users\Admin\sqlpos\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>"4100"</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -192,10 +192,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;FLUTTER_VERSION=\"0.1.0\";FLUTTER_VERSION_MAJOR=0;FLUTTER_VERSION_MINOR=1;FLUTTER_VERSION_PATCH=0;FLUTTER_VERSION_BUILD=0;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Admin\sqlpos\windows;C:\Users\Admin\sqlpos\windows\flutter\ephemeral;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\repo\sqlpos\windows;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\printing\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\window_manager\windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -203,28 +203,28 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\flutter\Release\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\printing\Release\printing_plugin.lib;C:\Users\Admin\sqlpos\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\flutter\Release\flutter_wrapper_app.lib;dwmapi.lib;..\plugins\printing\Release\printing_plugin.lib;..\plugins\screen_retriever_windows\Release\screen_retriever_windows_plugin.lib;..\plugins\window_manager\Release\window_manager_plugin.lib;C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\flutter_windows.dll.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Admin/sqlpos/build/windows/x64/runner/Release/sqlpos.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Admin/sqlpos/build/windows/x64/runner/Release/sqlpos.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/Release/sqlpos.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/Release/sqlpos.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
     <Manifest>
-      <AdditionalManifestFiles>C:\Users\Admin\sqlpos\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
+      <AdditionalManifestFiles>C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\runner.exe.manifest;</AdditionalManifestFiles>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Admin\sqlpos\windows\runner\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Admin/sqlpos/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/windows -BC:/Users/Admin/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/windows -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,11 +233,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Admin\sqlpos\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/Admin/sqlpos/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/windows -BC:/Users/Admin/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/windows -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,11 +246,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\Admin\sqlpos\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Admin/sqlpos/windows/runner/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Administrator/Desktop/repo/sqlpos/windows/runner/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Admin/sqlpos/windows -BC:/Users/Admin/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Admin/sqlpos/build/windows/x64/runner/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/windows -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/runner/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,38 +259,46 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Admin\sqlpos\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Admin\sqlpos\windows\runner\flutter_window.cpp" />
-    <ClCompile Include="C:\Users\Admin\sqlpos\windows\runner\main.cpp" />
-    <ClCompile Include="C:\Users\Admin\sqlpos\windows\runner\utils.cpp" />
-    <ClCompile Include="C:\Users\Admin\sqlpos\windows\runner\win32_window.cpp" />
-    <ClCompile Include="C:\Users\Admin\sqlpos\windows\flutter\generated_plugin_registrant.cc" />
-    <ResourceCompile Include="C:\Users\Admin\sqlpos\windows\runner\Runner.rc" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\flutter_window.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\main.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\utils.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\win32_window.cpp" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\generated_plugin_registrant.cc" />
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\Runner.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Admin\sqlpos\build\windows\x64\ZERO_CHECK.vcxproj">
-      <Project>{B62B196F-6DD3-3EA8-BF4B-B60730579889}</Project>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\ZERO_CHECK.vcxproj">
+      <Project>{3620F963-6B55-31C0-8504-65582CB9A662}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Admin\sqlpos\build\windows\x64\flutter\flutter_assemble.vcxproj">
-      <Project>{72007A78-D2A5-3280-9F2E-60C731A267E1}</Project>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\flutter\flutter_assemble.vcxproj">
+      <Project>{8BC0C06C-F4DF-387C-AEC1-8829A269D048}</Project>
       <Name>flutter_assemble</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Admin\sqlpos\build\windows\x64\flutter\flutter_wrapper_app.vcxproj">
-      <Project>{2810CB1D-6039-3419-9AA8-E9938757EB7F}</Project>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\flutter\flutter_wrapper_app.vcxproj">
+      <Project>{8130259C-1BAF-36AD-9A2C-6279E03D03D1}</Project>
       <Name>flutter_wrapper_app</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Admin\sqlpos\build\windows\x64\plugins\printing\printing_plugin.vcxproj">
-      <Project>{242A2362-76A2-3B37-AF8D-4B7134C02319}</Project>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\plugins\printing\printing_plugin.vcxproj">
+      <Project>{A22F8B13-1490-378D-9821-53E8603901BC}</Project>
       <Name>printing_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\plugins\screen_retriever_windows\screen_retriever_windows_plugin.vcxproj">
+      <Project>{E6516EE4-8EE6-3C81-B74E-8E81C67252B4}</Project>
+      <Name>screen_retriever_windows_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\plugins\window_manager\window_manager_plugin.vcxproj">
+      <Project>{BC74EA84-5B49-3CEA-BB14-5973CBB63DFC}</Project>
+      <Name>window_manager_plugin</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
