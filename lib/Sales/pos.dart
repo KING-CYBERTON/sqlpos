@@ -233,6 +233,7 @@ class _PosScreenState extends State<PosScreen> {
                           // Clear the text field and close dialog
                           cartController.cartItemsForUpload.clear();
                           cartController.products.clear();
+                          CashAmountController.clear();
                           Navigator.of(context).pop();
                           print(cartController.products.length);
                         }
@@ -442,7 +443,6 @@ class _PosScreenState extends State<PosScreen> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-    
               Image.asset(
                   height: 40,
                   width: 200,
@@ -509,7 +509,6 @@ class _PosScreenState extends State<PosScreen> {
                                 ),
                                 Expanded(
                                   child: Container(
-                                    
                                     child: SingleChildScrollView(
                                         child: Table(
                                       columnWidths: const {
@@ -517,7 +516,8 @@ class _PosScreenState extends State<PosScreen> {
                                         1: // Item Lookup Code
                                             FlexColumnWidth(3), // Description
                                       },
-                                      border: TableBorder.all(color: Colors.grey),
+                                      border:
+                                          TableBorder.all(color: Colors.grey),
                                       children: [
                                         // Header Row
                                         TableRow(
@@ -540,7 +540,7 @@ class _PosScreenState extends State<PosScreen> {
                                             ),
                                           ],
                                         ),
-                                    
+
                                         // Data Rows
                                         ...filteredproduct
                                             .asMap()
@@ -548,27 +548,27 @@ class _PosScreenState extends State<PosScreen> {
                                             .map((entry) {
                                           Product product = entry
                                               .value; // The product at the current index
-                                    
+
                                           return TableRow(
                                             children: [
-                                            GestureDetector(
-                                              onDoubleTap: (){
-                                                   cartController
-                                                    .addProduct(product);
-                                                print(cartController.total);
-                                              },
+                                              GestureDetector(
+                                                onDoubleTap: () {
+                                                  cartController
+                                                      .addProduct(product);
+                                                  print(cartController.total);
+                                                },
                                                 child: Padding(
                                                   padding:
                                                       const EdgeInsets.all(8.0),
-                                                  child: Text(
-                                                      product.productId.toString()),
+                                                  child: Text(product.productId
+                                                      .toString()),
                                                 ),
                                               ),
                                               GestureDetector(
-                                                onDoubleTap: (){
-                                                     cartController
-                                                    .addProduct(product);
-                                                print(cartController.total);
+                                                onDoubleTap: () {
+                                                  cartController
+                                                      .addProduct(product);
+                                                  print(cartController.total);
                                                 },
                                                 child: Padding(
                                                   padding:
@@ -591,17 +591,20 @@ class _PosScreenState extends State<PosScreen> {
                       ),
                       Expanded(
                         child: Container(
-                                    decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(10), // Rounded corners
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.5), // Shadow color
-                blurRadius: 10, // Softness of shadow
-                offset: Offset(0, 10), // Offset in x and y directions
-              ),
-            ],
-          ),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius:
+                                BorderRadius.circular(10), // Rounded corners
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black
+                                    .withOpacity(0.5), // Shadow color
+                                blurRadius: 10, // Softness of shadow
+                                offset: Offset(
+                                    0, 10), // Offset in x and y directions
+                              ),
+                            ],
+                          ),
                           child: Column(
                             children: [
                               Row(
@@ -612,11 +615,11 @@ class _PosScreenState extends State<PosScreen> {
                                     child: IconButton(
                                       onPressed: () async {
                                         final dbHelper = MySQLHelper();
-                          
+
                                         List<Product> pro =
                                             await dbHelper.fetchAllProducts();
                                         pro = await dbHelper.fetchAllProducts();
-                          
+
                                         setState(() {
                                           prolist = pro;
                                           isExpanded = !isExpanded;
@@ -658,8 +661,8 @@ class _PosScreenState extends State<PosScreen> {
                                   children: [
                                     // Header Row
                                     TableRow(
-                                      decoration:
-                                          BoxDecoration(color: Colors.grey[300]),
+                                      decoration: BoxDecoration(
+                                          color: Colors.grey[300]),
                                       children: const [
                                         Padding(
                                           padding: EdgeInsets.all(8.0),
@@ -711,13 +714,13 @@ class _PosScreenState extends State<PosScreen> {
                                         ),
                                       ],
                                     ),
-                          
+
                                     // Data Rows
                                     ...cartController.products.entries
                                         .map((entry) {
                                       Product product = entry.key;
                                       int quantity = entry.value;
-                          
+
                                       return TableRow(
                                         children: [
                                           const Padding(
@@ -739,8 +742,8 @@ class _PosScreenState extends State<PosScreen> {
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
-                                            child: Text(
-                                                product.price.toStringAsFixed(2)),
+                                            child: Text(product.price
+                                                .toStringAsFixed(2)),
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.all(8.0),
@@ -805,9 +808,12 @@ class _PosScreenState extends State<PosScreen> {
                                               onSubmitted: (value) async {
                                                 // Action when Enter is pressed
                                                 final dbHelper = MySQLHelper();
-                                                Product? product = await dbHelper
-                                                    .fetchProductById(int.parse(
-                                                        productID.text.trim()));
+                                                Product? product =
+                                                    await dbHelper
+                                                        .fetchProductById(
+                                                            int.parse(productID
+                                                                .text
+                                                                .trim()));
                                                 product = await dbHelper
                                                     .fetchProductById(int.parse(
                                                         productID.text.trim()));

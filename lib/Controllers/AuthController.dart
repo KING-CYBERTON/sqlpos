@@ -7,7 +7,7 @@ class GetAuth extends GetxController {
 
   // Rxn<User> fbUser = Rxn<User>();
 
-  RxBool islogedin = true.obs;
+  RxBool islogedin = false.obs;
   RxInt employee = 0.obs;
    RxString employee_name = ''.obs;
 
