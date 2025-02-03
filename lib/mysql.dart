@@ -14,7 +14,7 @@ class MySQLHelper {
   final GetAuth getAuth = Get.put(GetAuth());
   // Define MySQL connection settings
   final ConnectionSettings settings = ConnectionSettings(
-    host: 'localhost', // Change this to your server's IP or domain if not local
+    host: '127.0.0.1', // Change this to your server's IP or domain if not local
     port: 3306, // Default MySQL port
     user: 'root', // Your MySQL username
     password: '1234', // Your MySQL password
