@@ -115,10 +115,10 @@ class CartController extends GetxController {
       .fold(0.0, (sum, element) => sum + element);
 
   // Calculate the tax (16%) based on the total payment amount.
-  double get tax => paymentTotal * 0.16;
+ // double get tax => paymentTotal * 0.16;
 
   // Calculate the subtotal excluding the tax.
-  double get subtotal => paymentTotal - tax;
+  double get subtotal => paymentTotal;
 
   // Get the total amount, formatted as a fixed 2 decimal places string.
   String get total => paymentTotal.toStringAsFixed(2);

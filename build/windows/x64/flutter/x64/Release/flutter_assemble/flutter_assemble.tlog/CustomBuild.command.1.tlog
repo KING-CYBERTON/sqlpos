@@ -1,6 +1,6 @@
-^C:\USERS\ADMINISTRATOR\DESKTOP\REPO\SQLPOS\BUILD\WINDOWS\X64\CMAKEFILES\429E9D5035EFDE00D31842E80C318830\FLUTTER_WINDOWS.DLL.RULE
+^C:\USERS\ADMINISTRATOR\DESKTOP\POS\SQLPOS\BUILD\WINDOWS\X64\CMAKEFILES\5409757E77D7248649464BE1E59C0563\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\Users\Administrator\Desktop\repo\sqlpos FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Administrator\Desktop\repo\sqlpos FLUTTER_TARGET=lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=true PACKAGE_CONFIG=C:\Users\Administrator\Desktop\repo\sqlpos\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\src\flutter PROJECT_DIR=C:\Users\Administrator\Desktop\pos\sqlpos FLUTTER_ROOT=C:\src\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Administrator\Desktop\pos\sqlpos FLUTTER_TARGET=lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=true PACKAGE_CONFIG=C:\Users\Administrator\Desktop\pos\sqlpos\.dart_tool\package_config.json C:/src/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\ADMINISTRATOR\DESKTOP\REPO\SQLPOS\BUILD\WINDOWS\X64\CMAKEFILES\B1C81DB00EBBDF7CF58793235CC51E6A\FLUTTER_ASSEMBLE.RULE
+^C:\USERS\ADMINISTRATOR\DESKTOP\POS\SQLPOS\BUILD\WINDOWS\X64\CMAKEFILES\5BDE3E5C6A3E4EA1126F79CCBD9341F1\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -16,9 +16,9 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\USERS\ADMINISTRATOR\DESKTOP\REPO\SQLPOS\WINDOWS\FLUTTER\CMAKELISTS.TXT
+^C:\USERS\ADMINISTRATOR\DESKTOP\POS\SQLPOS\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/windows -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/flutter/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/pos/sqlpos/windows -BC:/Users/Administrator/Desktop/pos/sqlpos/build/windows/x64 --check-stamp-file C:/Users/Administrator/Desktop/pos/sqlpos/build/windows/x64/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

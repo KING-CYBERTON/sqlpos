@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\screen_retriever_windows_plugin_c_api.cpp">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\screen_retriever_windows_plugin_c_api.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\screen_retriever_windows_plugin.cpp">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\screen_retriever_windows_plugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include\screen_retriever_windows\screen_retriever_windows_plugin_c_api.h">
+    <ClInclude Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\include\screen_retriever_windows\screen_retriever_windows_plugin_c_api.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\screen_retriever_windows_plugin.h">
+    <ClInclude Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\screen_retriever_windows_plugin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\.plugin_symlinks\screen_retriever_windows\windows\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{BA39F551-D2E7-3820-A671-AEB64EE2204F}</UniqueIdentifier>
+      <UniqueIdentifier>{9DFCF0B7-9054-38D1-872D-92DCBD947305}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{897BA55F-3C16-39C0-9600-33C4C1FA1122}</UniqueIdentifier>
+      <UniqueIdentifier>{BF5F4C1D-47C1-3007-8289-4C7C0FD8AE3B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

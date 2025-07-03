@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\flutter_window.cpp">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\flutter_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\main.cpp">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\utils.cpp">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\win32_window.cpp">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\win32_window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\generated_plugin_registrant.cc">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\generated_plugin_registrant.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\Runner.rc">
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\Runner.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{897BA55F-3C16-39C0-9600-33C4C1FA1122}</UniqueIdentifier>
+      <UniqueIdentifier>{BF5F4C1D-47C1-3007-8289-4C7C0FD8AE3B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,9 +1,10 @@
 import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:sqlpos/Datamodels/saleitem.dart';
+import 'package:sqlpos/Sales/restaurant.dart';
+import 'package:sqlpos/Sales/restaurantfinal.dart';
 import 'Controllers/AuthController.dart';
 import 'Datamodels/inventorylog.dart';
 import 'Datamodels/product.dart';
@@ -527,4 +528,398 @@ class MySQLHelper {
   //     print('Error inserting sale and sale items: $e');
   //   }
   // }
+
+//added in the morning
+  // ============================================
+  // 1. CREATE ORDER (when waiter creates new customer)
+  // ============================================
+  Future<int?> createOrder(String customerName, int table, String phone) async {
+    try {
+      if (_connection == null) await openConnection();
+
+   var result = await _connection!.query(
+  'INSERT INTO order_info (id, customername, table_location, phone, status) '
+  'VALUES ($table, "$customerName", $table, "$phone", "new")');
+
+      int orderId = table!;
+      print('Created new order with ID: $orderId');
+      return orderId;
+
+    } catch (e) {
+      print('Error creating order: $e');
+      return null;
+    } finally {
+      await closeConnection();
+    }
+  }
+
+  // ============================================
+  // 2. ADD TO CART (add/remove items from order)
+  // ============================================
+  Future<bool> addToCart(int orderId, int productId, String productName, 
+                        double price, String category, String emoji) async {
+    try {
+      if (_connection == null) await openConnection();
+
+      // Check if item already exists in cart
+      var existingItems = await _connection!.query(
+        'SELECT quantity FROM order_items WHERE order_id = $orderId AND product_id = $productId');
+
+      if (existingItems.isNotEmpty) {
+        // Item exists, increase quantity by 1
+        int currentQuantity = existingItems.first['quantity'] as int;
+        int newQuantity = currentQuantity + 1;
+        
+        await _connection!.query(
+          'UPDATE order_items SET quantity = $newQuantity WHERE order_id = $orderId AND product_id = $productId');
+        
+        print('Updated quantity for product $productId to $newQuantity');
+      } else {
+        // Item doesn't exist, add new item with quantity 1
+        await _connection!.query(
+          'INSERT INTO order_items (order_id, product_id, product_name, quantity, price, category, emoji) '
+          'VALUES ($orderId, $productId, "$productName", 1, $price, "$category", "$emoji")');
+        
+        print('Added new item $productName to order $orderId');
+      }
+
+      return true;
+
+    } catch (e) {
+      print('Error adding to cart: $e');
+      return false;
+    } finally {
+      await closeConnection();
+    }
+  }
+
+  // ============================================
+  // 3. REMOVE FROM CART (decrease quantity or remove item)
+  // ============================================
+  Future<bool> removeFromCart(int orderId, int productId) async {
+    try {
+      if (_connection == null) await openConnection();
+
+      // Get current quantity
+      var existingItems = await _connection!.query(
+        'SELECT quantity FROM order_items WHERE order_id = $orderId AND product_id = $productId');
+
+      if (existingItems.isEmpty) {
+        print('Item not found in cart');
+        return false;
+      }
+
+      int currentQuantity = existingItems.first['quantity'] as int;
+
+      if (currentQuantity > 1) {
+        // Decrease quantity by 1
+        int newQuantity = currentQuantity - 1;
+        await _connection!.query(
+          'UPDATE order_items SET quantity = $newQuantity WHERE order_id = $orderId AND product_id = $productId');
+        
+        print('Decreased quantity for product $productId to $newQuantity');
+      } else {
+        // Remove item completely if quantity is 1
+        await _connection!.query(
+          'DELETE FROM order_items WHERE order_id = $orderId AND product_id = $productId');
+        
+        print('Removed product $productId from order $orderId');
+      }
+
+      return true;
+
+    } catch (e) {
+      print('Error removing from cart: $e');
+      return false;
+    } finally {
+      await closeConnection();
+    }
+  }
+
+  // ============================================
+  // 4. UPDATE ORDER STATUS
+  // ============================================
+  Future<bool> updateOrderStatus(int orderId, String newStatus) async {
+    try {
+      if (_connection == null) await openConnection();
+
+      var result = await _connection!.query(
+        'UPDATE order_info SET status = "$newStatus" WHERE id = $orderId');
+
+      bool success = (result.affectedRows ?? 0) > 0;
+      if (success) {
+        print('Updated order $orderId status to $newStatus');
+      }
+      return success;
+
+    } catch (e) {
+      print('Error updating order status: $e');
+      return false;
+    } finally {
+      await closeConnection();
+    }
+  }
+// ============================================
+// FIXED fetchAllOrders Method
+// Replace your existing fetchAllOrders with this:
+// ============================================
+
+Future<List<Order>> fetchAllOrders() async {
+  List<Order> orders = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    // Fetch all orders
+    var orderResults = await _connection!.query(
+      'SELECT id, customername, table_location as table_name, phone, status, created_at FROM order_info ORDER BY created_at DESC');
+
+    // For each order, fetch its items
+    for (var orderRow in orderResults) {
+      try {
+        var itemResults = await _connection!.query(
+          'SELECT product_id, product_name, quantity, price, category, emoji FROM order_items WHERE order_id = ${orderRow['id']}');
+
+        List<OrderItem> orderItems = [];
+        for (var itemRow in itemResults) {
+          OrderItem orderItem = OrderItem(
+            id: itemRow['product_id'] as int,
+            name: itemRow['product_name'] as String,
+            price: (itemRow['price'] as num).toDouble(),
+            category: itemRow['category'] as String? ?? 'other',
+            emoji: itemRow['emoji'] as String? ?? '🍽️',
+            quantity: itemRow['quantity'] as int,
+          );
+          orderItems.add(orderItem);
+        }
+
+        Order order = Order(
+          id: orderRow['id'] as int,
+          name: orderRow['customername'] as String,
+          table: orderRow['table_name'] as int,
+          phone: orderRow['phone'] as String,
+          status: orderRow['status'] as String,
+          createdAt: orderRow['created_at'] as DateTime,
+          items: orderItems,
+        );
+
+        orders.add(order);
+      } catch (itemError) {
+        print('Error fetching items for order ${orderRow['id']}: $itemError');
+        // Continue with next order even if this one fails
+        continue;
+      }
+    }
+
+    print('Fetched ${orders.length} orders from the database.');
+  } catch (e) {
+    print('Error fetching orders: $e');
+  }
+  // DON'T close connection here - let it stay open for other operations
+  // finally {
+  //   await closeConnection();
+  // }
+  return orders;
+}
+
+
+// ============================================
+// SEPARATE FETCH FUNCTIONS - Much cleaner approach
+// Add these to your MySQLHelper class
+// ============================================
+
+// 1. FETCH ALL ORDERS (without items)
+Future<List<Map<String, dynamic>>> fetchAllOrdersInfo() async {
+  List<Map<String, dynamic>> orders = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    var results = await _connection!.query(
+      'SELECT id, customername, table_location, phone, status, created_at FROM order_info ORDER BY created_at DESC');
+
+    for (var row in results) {
+    orders.add({
+  'id': int.tryParse(row['id'].toString()) ?? 0,
+  'customername': row['customername']?.toString() ?? '',
+  'table_location': int.tryParse(row['table_location']?.toString() ?? '0') ?? 0,
+  'phone': row['phone']?.toString() ?? '',
+  'status': row['status']?.toString() ?? '',
+  'created_at': row['created_at'] as DateTime, // Only if you're sure it's never null
+});
+    }
+
+    print('Fetched ${orders.length} orders info from database.');
+  } catch (e) {
+    print('Error fetching orders info: $e');
+  }
+  return orders;
+}
+
+// 2. FETCH ALL ORDER ITEMS (for all orders)
+Future<List<Map<String, dynamic>>> fetchAllOrderItems() async {
+  List<Map<String, dynamic>> orderItems = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    var results = await _connection!.query(
+      'SELECT order_id, product_id, product_name, quantity, price, category, emoji FROM order_items ORDER BY order_id');
+
+    for (var row in results) {
+      orderItems.add({
+        'order_id': row['order_id'] as int,
+        'product_id': row['product_id'] as int,
+        'product_name': row['product_name'] as String,
+        'quantity': row['quantity'] as int,
+        'price': (row['price'] as num).toDouble(),
+        'category': row['category'] as String? ?? 'other',
+        'emoji': row['emoji'] as String? ?? '🍽️',
+      });
+    }
+
+    print('Fetched ${orderItems.length} order items from database.');
+  } catch (e) {
+    print('Error fetching order items: $e');
+  }
+  return orderItems;
+}
+
+
+
+// Add this method to MySQLHelper class for fetching today's order items
+Future<List<Map<String, dynamic>>> fetchTodaysOrderItems() async {
+  List<Map<String, dynamic>> orderItems = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    var results = await _connection!.query('''
+      SELECT oi.order_id, oi.product_id, oi.product_name, oi.quantity, oi.price, oi.category, oi.emoji 
+      FROM order_items oi
+      INNER JOIN order_info o ON oi.order_id = o.id
+      WHERE DATE(o.created_at) = CURDATE()
+      ORDER BY oi.order_id
+    ''');
+
+    for (var row in results) {
+      orderItems.add({
+        'order_id': row['order_id'] as int,
+        'product_id': row['product_id'] as int,
+        'product_name': row['product_name'] as String,
+        'quantity': row['quantity'] as int,
+        'price': (row['price'] as num).toDouble(),
+        'category': row['category'] as String? ?? 'other',
+        'emoji': row['emoji'] as String? ?? '🍽️',
+      });
+    }
+
+    print('Fetched ${orderItems.length} order items from today\'s orders');
+  } catch (e) {
+    print('Error fetching today\'s order items: $e');
+  }
+  return orderItems;
+}
+
+// Add this method to MySQLHelper class for fetching today's orders info
+Future<List<Map<String, dynamic>>> fetchTodaysOrdersInfo() async {
+  List<Map<String, dynamic>> orders = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    var results = await _connection!.query('''
+      SELECT id, customername, table_location, phone, status, created_at 
+      FROM order_info 
+      WHERE DATE(created_at) = CURDATE()
+      ORDER BY created_at DESC
+    ''');
+
+    for (var row in results) {
+      orders.add({
+        'id': int.tryParse(row['id'].toString()) ?? 0,
+        'customername': row['customername']?.toString() ?? '',
+        'table_location': int.tryParse(row['table_location']?.toString() ?? '0') ?? 0,
+        'phone': row['phone']?.toString() ?? '',
+        'status': row['status']?.toString() ?? '',
+        'created_at': row['created_at'] as DateTime,
+      });
+    }
+
+    print('Fetched ${orders.length} orders info from today\'s date');
+  } catch (e) {
+    print('Error fetching today\'s orders info: $e');
+  }
+  return orders;
+}
+
+
+// ============================================
+// ADDITIONAL HELPER METHODS FOR MySQLHelper CLASS
+// ============================================
+
+// Add these methods to MySQLHelper class for date-specific fetching
+Future<List<Map<String, dynamic>>> fetchOrderItemsByDate(DateTime targetDate) async {
+  List<Map<String, dynamic>> orderItems = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    String formattedDate = "${targetDate.year}-${targetDate.month.toString().padLeft(2, '0')}-${targetDate.day.toString().padLeft(2, '0')}";
+
+    var results = await _connection!.query('''
+      SELECT oi.order_id, oi.product_id, oi.product_name, oi.quantity, oi.price, oi.category, oi.emoji 
+      FROM order_items oi
+      INNER JOIN order_info o ON oi.order_id = o.id
+      WHERE DATE(o.created_at) = '$formattedDate'
+      ORDER BY oi.order_id
+    ''');
+
+    for (var row in results) {
+      orderItems.add({
+        'order_id': row['order_id'] as int,
+        'product_id': row['product_id'] as int,
+        'product_name': row['product_name'] as String,
+        'quantity': row['quantity'] as int,
+        'price': (row['price'] as num).toDouble(),
+        'category': row['category'] as String? ?? 'other',
+        'emoji': row['emoji'] as String? ?? '🍽️',
+      });
+    }
+
+    print('Fetched ${orderItems.length} order items for date $formattedDate');
+  } catch (e) {
+    print('Error fetching order items by date: $e');
+  }
+  return orderItems;
+}
+
+Future<List<Map<String, dynamic>>> fetchOrdersInfoByDate(DateTime targetDate) async {
+  List<Map<String, dynamic>> orders = [];
+  try {
+    if (_connection == null) await openConnection();
+
+    String formattedDate = "${targetDate.year}-${targetDate.month.toString().padLeft(2, '0')}-${targetDate.day.toString().padLeft(2, '0')}";
+
+    var results = await _connection!.query('''
+      SELECT id, customername, table_location, phone, status, created_at 
+      FROM order_info 
+      WHERE DATE(created_at) = '$formattedDate'
+      ORDER BY created_at DESC
+    ''');
+
+    for (var row in results) {
+      orders.add({
+        'id': int.tryParse(row['id'].toString()) ?? 0,
+        'customername': row['customername']?.toString() ?? '',
+        'table_location': int.tryParse(row['table_location']?.toString() ?? '0') ?? 0,
+        'phone': row['phone']?.toString() ?? '',
+        'status': row['status']?.toString() ?? '',
+        'created_at': row['created_at'] as DateTime,
+      });
+    }
+
+    print('Fetched ${orders.length} orders info for date $formattedDate');
+  } catch (e) {
+    print('Error fetching orders info by date: $e');
+  }
+  return orders;
+}
+
+
+
 }

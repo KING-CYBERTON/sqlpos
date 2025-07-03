@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Administrator/Desktop/repo/sqlpos/windows/flutter/ephemeral/.plugin_symlinks/window_manager/windows
+# Install script for directory: C:/Users/Administrator/Desktop/pos/sqlpos/windows/flutter/ephemeral/.plugin_symlinks/window_manager/windows
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

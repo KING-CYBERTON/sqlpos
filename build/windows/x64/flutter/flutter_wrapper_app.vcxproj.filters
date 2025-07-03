@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
+    <ClCompile Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{10772C98-F914-3F02-95F6-1804526CE4EF}</UniqueIdentifier>
+      <UniqueIdentifier>{BC8E3F06-6D01-3CD6-82D2-D12E9997ED16}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{897BA55F-3C16-39C0-9600-33C4C1FA1122}</UniqueIdentifier>
+      <UniqueIdentifier>{BF5F4C1D-47C1-3007-8289-4C7C0FD8AE3B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

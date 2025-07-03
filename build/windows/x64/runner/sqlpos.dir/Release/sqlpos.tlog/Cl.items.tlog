@@ -1,5 +1,5 @@
-C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\flutter_window.cpp;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\flutter_window.obj
-C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\main.cpp;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\main.obj
-C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\utils.cpp;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\utils.obj
-C:\Users\Administrator\Desktop\repo\sqlpos\windows\runner\win32_window.cpp;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\win32_window.obj
-C:\Users\Administrator\Desktop\repo\sqlpos\windows\flutter\generated_plugin_registrant.cc;C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\generated_plugin_registrant.obj
+C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\flutter_window.cpp;C:\Users\Administrator\Desktop\pos\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\flutter_window.obj
+C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\main.cpp;C:\Users\Administrator\Desktop\pos\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\main.obj
+C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\utils.cpp;C:\Users\Administrator\Desktop\pos\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\utils.obj
+C:\Users\Administrator\Desktop\pos\sqlpos\windows\runner\win32_window.cpp;C:\Users\Administrator\Desktop\pos\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\win32_window.obj
+C:\Users\Administrator\Desktop\pos\sqlpos\windows\flutter\generated_plugin_registrant.cc;C:\Users\Administrator\Desktop\pos\sqlpos\build\windows\x64\runner\sqlpos.dir\Release\generated_plugin_registrant.obj

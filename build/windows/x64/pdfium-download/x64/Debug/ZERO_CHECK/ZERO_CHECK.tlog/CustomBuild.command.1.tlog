@@ -1,6 +1,6 @@
-^C:\USERS\ADMINISTRATOR\DESKTOP\REPO\SQLPOS\BUILD\WINDOWS\X64\PDFIUM-DOWNLOAD\CMAKEFILES\41092C64FCAB600765EFDC89D3BD447C\GENERATE.STAMP.RULE
+^C:\USERS\ADMINISTRATOR\DESKTOP\POS\SQLPOS\BUILD\WINDOWS\X64\PDFIUM-DOWNLOAD\CMAKEFILES\708ACFC4C4613C2F27C38147C039615E\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Administrator/Desktop/repo/sqlpos/build/windows/x64/pdfium-download/pdfium-download.sln
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/pos/sqlpos/build/windows/x64/pdfium-download -BC:/Users/Administrator/Desktop/pos/sqlpos/build/windows/x64/pdfium-download --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Administrator/Desktop/pos/sqlpos/build/windows/x64/pdfium-download/pdfium-download.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

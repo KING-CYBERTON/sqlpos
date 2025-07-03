@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Administrator\Desktop\repo\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\41092c64fcab600765efdc89d3bd447c\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\Administrator\Desktop\pos\sqlpos\build\windows\x64\pdfium-download\CMakeFiles\708acfc4c4613c2f27c38147c039615e\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{415B7F6F-01C2-3E78-8B4B-44F829CEDADE}</UniqueIdentifier>
+      <UniqueIdentifier>{C62022DE-FB54-34F2-9CB1-49EA30C89AC8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

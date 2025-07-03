@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:mysql1/mysql1.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:sqlpos/Datamodels/product.dart';
+import 'package:sqlpos/Sales/restaurant.dart';
+import 'package:sqlpos/Sales/restaurantfinal.dart';
 import 'package:window_manager/window_manager.dart';
 import 'Sales/pos.dart';
 
@@ -46,7 +48,7 @@ class MainApp extends StatelessWidget {
         ],
       ),
       home: Scaffold(
-        body: PosScreen(),
+        body: RestaurantPosScreen(),
       ),
     );
   }
